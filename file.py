@@ -1,2 +1,0 @@
-a = "faraz"
-print(a)
