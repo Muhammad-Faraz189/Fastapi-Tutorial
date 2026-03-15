@@ -1,0 +1,2 @@
+a = "faraz"
+print(a)
