@@ -8,6 +8,7 @@ class Student(BaseModel):
     address: str
     total_student_name:List[str]
     contact_details:Dict[str,int]
+    
     @field_validator("email")
     @classmethod
     def email_validator(cls,value):
