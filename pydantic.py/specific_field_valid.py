@@ -8,6 +8,8 @@ class Student(BaseModel):
     address: str
     total_student_name:List[str]
     contact_details:Dict[str,int]
+
+    #if we want specific fix name
     
     @field_validator("email")
     @classmethod
@@ -19,6 +21,13 @@ class Student(BaseModel):
         if domain_name not in valid_domains:
             raise ValueError("Not a valid domain.")
         return value
+    
+    #if we want student name in capital letter.
+    @field_validator("name")
+    @classmethod
+    def transform_name(cls,value):
+        return value.upper()
+
 
         
 def student_info(student: Student):
