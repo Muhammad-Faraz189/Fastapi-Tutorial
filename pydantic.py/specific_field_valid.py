@@ -10,7 +10,7 @@ class Student(BaseModel):
     contact_details:Dict[str,int]
 
     #if we want specific fix name
-    
+    #Field validator
     @field_validator("email")
     @classmethod
     def email_validator(cls,value):
