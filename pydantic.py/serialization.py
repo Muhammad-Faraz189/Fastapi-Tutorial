@@ -31,6 +31,9 @@ s2 =Student(**student_dict)
 
 #model_dump() return us a dictionary.
 temp_dict = s2.model_dump()
+#if we want only specific field name like name
+temp_dict = s2.model_dump(include=['name'])
+
 #if we want data in json form
 json= s2.model_dump_json()
 
