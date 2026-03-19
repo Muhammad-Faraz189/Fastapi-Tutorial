@@ -47,7 +47,7 @@ def create_patient(patient: Patient):
 
     # Add new patient
     data[patient.id] = patient.model_dump(exclude=["id"])
-    
+    # save into the json file
     save_data(data)
 
     return JSONResponse(
