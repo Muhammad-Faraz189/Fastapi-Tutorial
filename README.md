@@ -4,7 +4,7 @@ FastAPI
 
 ---
 
-About This Project
+About This Project:
 
 This repository demonstrates how to build modern APIs using FastAPI with a strong focus on:
 
@@ -17,7 +17,7 @@ It is created as a **learning + reference project** for developers who want to u
 
 ---
 
-What’s Implemented
+What’s Implemented:
 
 Routing & HTTP Methods
 
@@ -28,9 +28,9 @@ Routing & HTTP Methods
 
 ---
 
-Parameters Handling
+Parameters Handling:
 
-Path Parameters
+Path Parameters:
 
 Used for dynamic routing:
 
@@ -40,7 +40,7 @@ def get_item(item_id: int):
     return {"item_id": item_id}
 ```
 
-Query Parameters
+Query Parameters:
 
 Used for filtering and optional inputs:
 
@@ -52,7 +52,7 @@ def get_items(limit: int = 10):
 
 ---
 
-Pydantic Models (Data Validation)
+Pydantic Models (Data Validation):
 
 ```python
 from pydantic import BaseModel
@@ -69,7 +69,7 @@ class Item(BaseModel):
 
 ---
 
-Folder Layout
+Folder Layout:
 
 ```
 fastapi-project/
@@ -83,7 +83,7 @@ fastapi-project/
 
 
 
-Run Server
+Run Server:
 
 ```bash
 uvicorn main:app --reload
@@ -103,7 +103,7 @@ FastAPI gives built-in docs:
 
 ---
 
-Example Endpoints
+Example Endpoints:
 
 | Method | Endpoint    | Description     |
 | ------ | ----------- | --------------- |
@@ -115,7 +115,7 @@ Example Endpoints
 
 ---
 
-Purpose
+Purpose:
 
 This project is built to:
 
@@ -126,7 +126,7 @@ This project is built to:
 
 ---
 
-Next Steps
+Next Steps:
 
 * Add database (SQLAlchemy)
 * Authentication system
@@ -136,7 +136,7 @@ Next Steps
 ---
 
 
-## 👨‍💻 Developer
+ Developer
  Muhammad Faraz
  <br>
 
